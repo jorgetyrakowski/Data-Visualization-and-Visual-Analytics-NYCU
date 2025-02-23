@@ -18,7 +18,7 @@ const color = d3.scaleOrdinal()
     .range(["#FF6B6B", "#FFFF00", "#00FFFF"]);
 
 // Load the Iris dataset and initialize the matrix
-d3.csv("http://vis.lab.djosix.com:2024/data/iris.csv").then(data => {
+d3.csv("iris.csv").then(data => {
     let validData = data.filter(d => {
         // Convert string values to numbers
         d["sepal length"] = +d["sepal length"];

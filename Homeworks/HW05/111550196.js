@@ -292,7 +292,7 @@ class UniversityRankingChart {
 const chart = new UniversityRankingChart("#chart");
 
 // Load CSV data and initialize the chart
-d3.csv("http://vis.lab.djosix.com:2024/data/TIMES_WorldUniversityRankings_2024.csv")
+d3.csv("TIMES_WorldUniversityRankings_2024.csv")
     .then(function(data) {
         console.log("Raw data loaded:", data.length);
         const processedData = processData(data);

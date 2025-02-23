@@ -1,5 +1,5 @@
 // Load the CSV file using D3.js
-d3.csv("http://vis.lab.djosix.com:2024/data/iris.csv").then(function(data) {
+d3.csv("iris.csv").then(function(data) {
     // Filter the data to remove entries where the 'class' field is an empty string
     let validData = data.filter(d => {
         // Convert each attribute to a number; if conversion fails, it defaults to NaN which is filtered out by the class check

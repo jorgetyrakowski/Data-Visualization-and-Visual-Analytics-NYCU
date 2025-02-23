@@ -12,7 +12,7 @@ var svg = d3.select("#parallel-coordinates")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");  // Translate the SVG group
 
 // Load the dataset from the given URL
-d3.csv("http://vis.lab.djosix.com:2024/data/iris.csv").then(function (data) {
+d3.csv("iris.csv").then(function (data) {
     // Filter the dataset to ensure that only rows with a valid "class" are included
     data = data.filter(d => d["class"]);
 

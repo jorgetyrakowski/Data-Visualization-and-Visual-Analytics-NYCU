@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
     // Load the abalone data using d3.text(), since it's in plain text format
-    d3.text("http://vis.lab.djosix.com:2024/data/abalone.data").then(function(rawData) {
+    d3.text("abalone.data").then(function(rawData) {
 
         // Process the raw data into an array of objects
         let data = rawData.trim().split("\n").map(function(row) {
