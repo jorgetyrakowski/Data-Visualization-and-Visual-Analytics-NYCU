@@ -329,7 +329,7 @@ function createLegends() {
 async function init() {
    try {
        // Load and process the data
-       const response = await fetch('http://vis.lab.djosix.com:2024/data/car.data');
+       const response = await fetch('car.data');
        const data = await response.text();
        const processedData = processData(data);
        

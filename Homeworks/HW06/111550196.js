@@ -21,7 +21,7 @@ const svg = d3.select("#themeriver-container")
 const colorScale = d3.scaleOrdinal(d3.schemeTableau10);
 
 // Load and process the data from the CSV file
-d3.csv("http://vis.lab.djosix.com:2024/data/ma_lga_12345.csv").then(data => {
+d3.csv("ma_lga_12345.csv").then(data => {
     // Parse dates and convert prices to numbers
     // This ensures our data is in the correct format for visualization
     const parseDate = d3.timeParse("%d/%m/%Y");

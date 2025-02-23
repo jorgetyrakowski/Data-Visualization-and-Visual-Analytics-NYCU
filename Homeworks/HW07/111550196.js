@@ -1,5 +1,5 @@
 // Data source path
-const data_path = "http://vis.lab.djosix.com:2024/data/air-pollution.csv";
+const data_path = "air-pollution.csv";
 
 // Color schemes for each pollutant (4 intensity levels)
 const colorSchemes = {
