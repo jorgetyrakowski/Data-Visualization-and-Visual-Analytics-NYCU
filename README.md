@@ -21,7 +21,7 @@
 
 ## 🎓 Final Project  
 
-**Project Title: [Visualizing World Vaccination Progress Over Time](https://jorgetyrakowski.github.io/Data-Visualization-and-Visual-Analytics-NYCU/Final%20Project/index.html)**  
+**Project Title: [Global CO2 Emissions Data Visualization](https://jorgetyrakowski.github.io/Data-Visualization-and-Visual-Analytics-NYCU/Final%20Project/index.html)**  
 
 - [Bar Chart Race](https://jorgetyrakowski.github.io/Data-Visualization-and-Visual-Analytics-NYCU/Final%20Project/bar_chart_race)  
 - [Choropleth Map](https://jorgetyrakowski.github.io/Data-Visualization-and-Visual-Analytics-NYCU/Final%20Project/choropleth_map)  
