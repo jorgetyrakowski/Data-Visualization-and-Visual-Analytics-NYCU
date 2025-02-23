@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global CO2 Emissions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        #intro {
+            background-image: url("image.webp");
+            height: 100vh;
+        }
+
+        @media (min-width: 992px) {
+            #intro {
+                margin-top: -58.59px;
+            }
+        }
+
+        .visualization-list {
+            margin-top: 2rem;
+        }
+
+        .visualization-list li {
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+        }
+
+        .data-source {
+            margin-top: 2rem;
+            font-size: 1.1rem;
+        }
+
+        .data-description {
+            margin-top: 1.5rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./"><b>Global CO2 Emissions</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./bar_chart_race/">Bar Chart Race</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./choropleth_map/">Choropleth Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./stacked_area_chart/">Stacked Area Chart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background image -->
+    <div id="intro" class="bg-image shadow-2-strong">
+        <div class="mask h-100" style="background-color: rgba(0, 0, 0, 0.8);">
+            <div class="container d-flex align-items-center justify-content-center text-center h-100">
+                <div class="text-white">
+                    <h1 class="mb-5">Global CO2 Emissions Visualization</h1>
+                    
+                    <div class="data-source">
+                        <h2 class="mb-3">Dataset: <a href="https://github.com/owid/co2-data" target="_blank" class="text-white">CO2 Emissions
+                                by Our World in Data</a></h2>
+                    </div>geniASD
+                    
+                    <div class="data-description">
+                        <p class="mb-4">This visualization system provides an interactive exploration of global CO2 emissions data from 1800 to present, revealing historical patterns, 
+                            emission sources, and the relationship between economic growth and carbon footprint across nations.</p>
+                    </div>
+                    
+                    <div class="visualization-list">
+                        <h3 class="mb-4">Available Visualizations:</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <h4>1. Bar Chart Race</h4>
+                                <p>Dynamically visualizes the changes in CO2 emissions across countries over time, offering both total 
+                                   emissions and per capita views. Watch as countries rise and fall in their emission rankings through history.</p>
+                            </li>
+                            <li>
+                                <h4>2. Choropleth Map</h4>
+                                <p>Displays CO₂ Emissions in Relation to GDP, helping understand how economic development relates to 
+                                   carbon emissions across different regions of the world.</p>
+                            </li>
+                            <li>
+                                <h4>3. Stacked Area Chart</h4>
+                                <p>Shows the evolution of global CO₂ emissions by source over time, breaking down contributions from 
+                                   various sectors including coal, oil, gas, cement production, and other industrial processes.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <p class="mt-4">Select any visualization from the navigation bar above to begin exploring the data.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>

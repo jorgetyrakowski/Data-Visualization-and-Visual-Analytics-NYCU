@@ -1,0 +1,54 @@
+.bar {
+    transition: opacity 0.2s;
+}
+
+.bar:hover {
+    opacity: 0.8;
+}
+
+.axis-label {
+    font: 14px sans-serif;
+    fill: #666;
+}
+
+.title {
+    font: bold 24px sans-serif;
+    fill: #184e77;
+}
+
+.year-label {
+    font: bold 96px sans-serif;
+    fill: rgba(24, 78, 119, 0.1);
+}
+
+.value-label {
+    font: 12px sans-serif;
+    fill: #666;
+}
+
+#chart {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.controls {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    transition: width 0.25s ease-in-out;
+}
+
+.view-selector {
+    margin-bottom: 15px;
+}

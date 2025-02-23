@@ -1,0 +1,59 @@
+/* Global styles applied to the entire page */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, sans-serif font */
+    text-align: center;             /* Centers text in most elements */
+}
+
+/* Container for holding all matrices, styled to center and wrap if necessary */
+.matrix-container {
+    display: flex;                  /* Use flexbox layout to align items */
+    justify-content: center;        /* Center items horizontally */
+    flex-wrap: wrap;                /* Allow matrices to wrap on smaller screens */
+    margin-top: 20px;               /* Adds space above the container */
+}
+
+/* Styling the main heading (h1) */
+h1 {
+    font-size: 24px;                /* Font size for the main title */
+    margin-bottom: 20px;            /* Adds space below the title */
+}
+
+/* Styling for the subheading (h2), typically for author/ID */
+h2 {
+    font-size: 16px;                /* Font size for the subheading */
+    margin-bottom: 10px;            /* Adds space below the subheading */
+}
+
+/* Tooltip style for hover effects */
+.tooltip {
+    font-size: 12px;                /* Smaller font for the tooltip text */
+    pointer-events: none;           /* Prevents interaction with the tooltip */
+    position: absolute;             /* Positions tooltip relative to the page */
+    background-color: #f9f9f9;      /* Light background for the tooltip */
+    border: 1px solid #ccc;         /* Light border around the tooltip */
+    padding: 5px;                   /* Adds padding inside the tooltip */
+    border-radius: 5px;             /* Slightly round the tooltip corners */
+}
+
+/* Styling for labels in the X and Y axes of the matrices */
+.xLabels, .yLabels {
+    font-size: 14px;                /* Increases label font size for readability */
+    font-weight: bold;              /* Makes the labels bold for emphasis */
+}
+
+/* Container for each individual matrix */
+.matrix {
+    margin: 20px;                   /* Adds space around each matrix to separate them */
+}
+
+/* Styling for the text inside each cell of the matrix */
+.cell-text {
+    font-size: 12px;                /* Sets the font size for numbers inside the cells */
+    fill: black;                    /* Ensures the text color is black for contrast */
+    font-weight: bold;              /* Text is bold to make values stand out */
+}
+
+/* Axis label styling for the color bar or any other axis */
+.axis-label {
+    font-size: 12px;                /* Font size for axis labels */
+}

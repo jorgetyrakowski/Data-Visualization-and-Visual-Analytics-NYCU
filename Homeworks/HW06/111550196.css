@@ -1,0 +1,92 @@
+/* Setting the basic font and background for the entire page */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Styling for the main chart container */
+.chart-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for each stream in the themeriver */
+.stream {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+/* Hover effect for streams */
+.stream:hover {
+    opacity: 1;
+}
+
+/* Styling for the instructions container */
+.instructions-container {
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+/* Styling for the legend container */
+#legend-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+/* Styling for each legend item */
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: move;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for legend items */
+.legend-item:hover {
+    background-color: #f1f3f5;
+}
+
+/* Styling for the color indicator in legend items */
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Styling for the tooltip */
+.tooltip {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for axis labels */
+.axis-label {
+    font-size: 12px;
+    fill: #666;
+}
+
+/* Styling for the chart title */
+.chart-title {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #333;
+}

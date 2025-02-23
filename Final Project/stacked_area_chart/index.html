@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CO2 Emissions by Source</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/nouislider/dist/nouislider.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../"><b>Global CO2 Emissions</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../bar_chart_race/">Bar Chart Race</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../choropleth_map/">Choropleth Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Stacked Area Chart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">CO2 Emissions by Source (1750-2023)</h1>
+        <div class="row">
+            <div class="col-12">
+                <div class="time-controls">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <button id="play-button" class="btn btn-primary">Play</button>
+                        <span id="year-display" class="year-display">Year range: 1750 - 2023</span>
+                    </div>
+                    <div id="slider-range"></div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div id="chart"></div>
+                    </div>
+                </div>
+
+                <div class="card mt-4 mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title h4 mb-3">About this visualization</h2>
+                        
+                        <h3 class="h5 text-muted mb-3">Global CO₂ Emissions by Source Over Time</h3>
+                        
+                        <p class="mb-4">This visualization shows the historical evolution of global CO₂ emissions broken down by major sources since 1750, capturing the dramatic changes in how human activities have impacted atmospheric CO₂ levels.</p>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="h6 fw-bold">What does this chart show?</h4>
+                                <ul class="mb-4">
+                                    <li>Displays annual CO₂ emissions from six major sources: coal, oil, gas, cement production, flaring, and other industrial processes</li>
+                                    <li>Measured in tonnes of CO₂</li>
+                                    <li>Based on territorial emissions (production-based)</li>
+                                    <li>Excludes emissions from land-use change and international aviation/shipping</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="h6 fw-bold">Key insights:</h4>
+                                <ul class="mb-4">
+                                    <li>The Industrial Revolution (late 1700s) marked the beginning of significant fossil fuel-based emissions, primarily from coal</li>
+                                    <li>Oil and gas emerged as major sources during the 20th century, diversifying our energy mix</li>
+                                    <li>Post-1950 shows dramatic acceleration in emissions across all sources</li>
+                                    <li>Recent years show continued dominance of fossil fuels despite growing climate concerns</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <h4 class="h6 fw-bold mb-3">Historical Context and Trends:</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>1750-1850:</strong> Early Industrial Revolution - Coal dominates, marking the beginning of significant human-caused CO₂ emissions</li>
+                            <li class="mb-2"><strong>1850-1950:</strong> Industrial Expansion - Diversification of energy sources with the introduction of oil, steady increase in emissions</li>
+                            <li class="mb-2"><strong>1950-2000:</strong> Post-War Boom - Dramatic acceleration in emissions, with significant growth in oil and gas usage</li>
+                            <li class="mb-2"><strong>2000-Present:</strong> Modern Era - Continued growth in emissions despite environmental awareness, with notable increases in gas consumption and industrial processes</li>
+                        </ul>
+
+                        <div class="text-muted mt-4">
+                            <small>
+                                <strong>Source:</strong> Global Carbon Budget (2024)<br>
+                                <strong>Note:</strong> Emissions from international aviation and shipping are not included in national totals. The data represents territorial emissions and does not account for embedded emissions in traded goods.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://unpkg.com/nouislider"></script>
+    <script src="script.js"></script>
+</body>
+</html>

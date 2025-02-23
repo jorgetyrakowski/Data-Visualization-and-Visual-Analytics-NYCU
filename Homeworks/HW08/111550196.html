@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- The document type declaration, stating this is an HTML5 document -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Character set declaration, specifying UTF-8 encoding for international character support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Meta tag to ensure proper scaling on different devices -->
+    <title>Car Evaluation Flow Analysis</title>
+    <!-- Title of the document shown in the browser's title bar or tab -->
+    <link rel="stylesheet" href="111550196.css">
+    <!-- Link to external CSS for styling the page -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <!-- Include the D3.js library for creating visualizations -->
+    <script src="https://unpkg.com/d3-sankey@0.12.3/dist/d3-sankey.min.js"></script>
+    <!-- Include the D3-sankey plugin for creating Sankey diagrams -->
+</head>
+<body>
+    <header>
+        <h1>Car Evaluation Flow Analysis</h1>
+        <!-- Main heading of the page -->
+        <div class="author">111550196 狄豪飛</div>
+        <!-- Display author information -->
+        <div class="description">
+            <p>Interactive Sankey diagram showing relationships between car attributes and their evaluation.</p>
+            <!-- Brief description of what the user will find on this page -->
+        </div>
+    </header>
+    
+    <div class="controls">
+        <!-- Container for any controls like legends -->
+        <div class="legend-container">
+            <h3>Car Attributes:</h3>
+            <!-- Subheading for car attributes section -->
+            <div id="attribute-legend" class="legend"></div>
+            <!-- Placeholder where car attribute legends will be dynamically inserted -->
+        </div>
+        <div class="value-legend-container">
+            <h3>Evaluation Categories:</h3>
+            <!-- Subheading for evaluation categories section -->
+            <div id="evaluation-legend" class="legend"></div>
+            <!-- Placeholder where evaluation category legends will be dynamically inserted -->
+        </div>
+    </div>
+
+    <div class="visualization-container">
+        <!-- Container for the Sankey diagram -->
+        <div id="sankey-diagram"></div>
+        <!-- Placeholder where the Sankey diagram will be dynamically generated -->
+        <div id="tooltip" class="tooltip"></div>
+        <!-- Placeholder for tooltips that display additional information when user interacts with the diagram -->
+    </div>
+
+    <div class="instructions">
+        <p><strong>Instructions:</strong> Drag nodes to rearrange them. Hover over connections to see detailed information.</p>
+        <!-- Instructions for the user on how to interact with the Sankey diagram -->
+    </div>
+    
+    <script src="111550196.js"></script>
+    <!-- Link to external JavaScript file that contains logic for creating and managing the Sankey diagram -->
+</body>
+</html>

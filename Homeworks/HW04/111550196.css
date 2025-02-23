@@ -1,0 +1,126 @@
+/* Body styling: sets the font, background color, and page layout */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #312c3b; /* Dark background for contrast */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container for centralizing content and adding styles */
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255); /* White background */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Slight shadow */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Main title styling */
+h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Subtitle styling */
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Center the SVG on the page */
+svg {
+  display: block;
+  margin: 40px auto;
+}
+
+/* Axis lines and paths */
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #555; /* Dark gray lines for axes */
+}
+
+/* Styling for histogram bars */
+.hist-bar {
+  stroke: #333; /* Dark border around bars */
+}
+
+/* Scatter points in scatterplots */
+.scatter-point {
+  fill-opacity: 0.7; /* Slight transparency for points */
+  stroke: #333; /* Dark border */
+}
+
+/* Highlighted scatter points */
+.selected-point {
+  fill-opacity: 1;
+  stroke-width: 2px; /* Thicker border for selected points */
+  stroke: #000; /* Black border */
+}
+
+/* Non-selected scatter points */
+.hidden {
+  opacity: 0.15; /* Low opacity for non-selected points */
+}
+
+/* Brushing area style */
+.brush .selection {
+  fill: #888; /* Gray fill for selection */
+  fill-opacity: 0.3; /* Slight transparency */
+  stroke: none;
+}
+
+/* Font styles for axis labels */
+.axis-label {
+  font-size: 12px;
+  font-weight: bold;
+  fill: black;
+}
+
+/* Text style for axis ticks */
+.axis text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Grid lines */
+.grid line {
+  stroke: lightgrey;
+  opacity: 0.7;
+}
+
+/* Legend text style */
+.legend text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Legend box border */
+.legend rect {
+  stroke: #ccc;
+  stroke-width: 1px;
+}
+
+/* Styling for histogram labels (inside bars) */
+.histogram-label {
+  font-size: 14px;
+  font-weight: bold;
+  fill: black;
+  text-anchor: middle;
+}
+
+/* Tooltip style */
+.tooltip {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Rounded corners */
+  visibility: hidden; /* Hidden by default */
+}

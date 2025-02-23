@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Dataset Scatter Plot</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="111550196.css">
+</head>
+<body>
+    <!-- Main header for the page showing the title of the visualization -->
+    <h1>Iris Flower Dataset Visualization</h1>
+    
+    <!-- Section containing the dropdown menu for selecting the X-axis attribute -->
+    <div>
+        <label for="x-axis">Choose X-axis attribute:</label>
+        <select id="x-axis">
+            <!-- Options for selecting which attribute to display on the X-axis -->
+            <!-- 'selected' attribute sets the default selection -->
+            <option value="sepal length" selected>Sepal Length</option>
+            <option value="sepal width">Sepal Width</option>
+            <option value="petal length">Petal Length</option>
+            <option value="petal width">Petal Width</option>
+        </select>
+    </div>
+    
+    <!-- Section containing the dropdown menu for selecting the Y-axis attribute -->
+    <div>
+        <label for="y-axis">Choose Y-axis attribute:</label>
+        <select id="y-axis">
+            <!-- Options for selecting which attribute to display on the Y-axis -->
+            <!-- 'selected' attribute sets the default selection -->
+            <option value="sepal width" selected>Sepal Width</option>
+            <option value="sepal length">Sepal Length</option>
+            <option value="petal length">Petal Length</option>
+            <option value="petal width">Petal Width</option>
+        </select>
+    </div>
+    
+    <!-- Container div where the D3.js scatter plot will be rendered -->
+    <div id="scatterplot"></div>
+    
+    <!-- Link to the D3.js library, loaded from a CDN for creating data visualizations -->
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- Link to the external JavaScript file where the visualization logic is defined -->
+    <script src="111550196.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+.map-container {
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.country {
+    stroke: #fff;
+    stroke-width: 0.5;
+    vector-effect: non-scaling-stroke;
+}
+
+.country:hover {
+    fill-opacity: 0.8;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    pointer-events: none;
+    font-size: 14px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.legend {
+    font-size: 12px;
+    pointer-events: none;
+}
+
+.legend rect {
+    shape-rendering: crispEdges;
+}
+
+.legend text {
+    fill: #333;
+}
+
+.legend-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#map {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}

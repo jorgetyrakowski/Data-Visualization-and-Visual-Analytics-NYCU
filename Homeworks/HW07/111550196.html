@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW7_Horizon Chart</title>
+    <!-- Bootstrap and Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="111550196.css">
+</head>
+<body class="text-center">
+    <h1 class="my-3">HW7_Horizon Chart</h1>
+    <h3 class="my-2">111550196 狄豪飛</h3>
+    <h2 class="my-3">
+        <a href="https://www.kaggle.com/datasets/bappekim/air-pollution-in-seoul" target="_blank">
+            Air Pollution in Seoul
+        </a>
+        <span class="info-button ms-2" data-bs-toggle="modal" data-bs-target="#infoModal">
+            <i class="bi bi-info-circle"></i>
+        </span>
+    </h2>
+    
+    <div id="year-selector" class="my-3"></div>
+    
+    <div class="my-3">
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="inlineRadio1" value="SO2" checked>
+            <label class="form-check-label" for="inlineRadio1">SO₂</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="inlineRadio2" value="NO2">
+            <label class="form-check-label" for="inlineRadio2">NO₂</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="inlineRadio3" value="O3">
+            <label class="form-check-label" for="inlineRadio3">O₃</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="inlineRadio4" value="CO">
+            <label class="form-check-label" for="inlineRadio4">CO</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="inlineRadio5" value="PM10">
+            <label class="form-check-label" for="inlineRadio5">PM₁₀</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="type" id="inlineRadio6" value="PM2.5">
+            <label class="form-check-label" for="inlineRadio6">PM₂.₅</label>
+        </div>
+    </div>
+
+    <div class="my-3">
+        <select id="aggregation-method" class="form-select d-inline-block mx-2" style="width: auto;">
+            <option value="mean">Mean</option>
+            <option value="median">Median</option>
+        </select>
+    </div>
+    
+    <div id="horizon-chart"></div>
+
+    <!-- Information Modal -->
+    <div class="modal fade" id="infoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">About the Air Pollution Data</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>About the Data:</h6>
+                    <p>This visualization shows air pollution measurements from Seoul, South Korea. Data is collected hourly and aggregated into daily summaries.</p>
+                    
+                    <h6>Pollutants Measured:</h6>
+                    <ul class="text-start">
+                        <li><strong>SO₂ (Sulfur Dioxide)</strong>: Industrial emissions and fuel combustion [Unit: ppm]</li>
+                        <li><strong>NO₂ (Nitrogen Dioxide)</strong>: Vehicle emissions and industrial processes [Unit: ppm]</li>
+                        <li><strong>O₃ (Ozone)</strong>: Created by chemical reactions between other pollutants [Unit: ppm]</li>
+                        <li><strong>CO (Carbon Monoxide)</strong>: Vehicle emissions and incomplete combustion [Unit: ppm]</li>
+                        <li><strong>PM10 (Particulate Matter ≤10μm)</strong>: Dust, smoke, and other particles [Unit: μg/m³]</li>
+                        <li><strong>PM2.5 (Particulate Matter ≤2.5μm)</strong>: Fine particles from various sources [Unit: μg/m³]</li>
+                    </ul>
+
+                    <h6>Visualization Details:</h6>
+                    <ul class="text-start">
+                        <li>Each row represents a different monitoring station</li>
+                        <li>Color intensity indicates pollution levels (darker = higher concentration)</li>
+                        <li>Hover over the chart to see detailed daily measurements</li>
+                        <li>Switch between mean and median aggregations for daily values</li>
+                    </ul>
+
+                    <h6>Standard Ranges:</h6>
+                    <ul class="text-start">
+                        <li>SO₂: 0-0.012 ppm (Standard range)</li>
+                        <li>NO₂: 0-0.06 ppm</li>
+                        <li>O₃: 0-0.07 ppm</li>
+                        <li>CO: 0-1.5 ppm</li>
+                        <li>PM10: 0-200 μg/m³</li>
+                        <li>PM2.5: 0-80 μg/m³</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://d3js.org/d3.v6.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="111550196.js"></script>
+</body>
+</html>
